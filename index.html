@@ -34,14 +34,15 @@
   </head>
   <body>
     <div class="container">
-      <img src="images/logo.svg" alt="logo" />
-      <div class="text-head">
+      <img role="logo" src="images/logo.svg" alt="logo" />
+      <div role="heading-text" class="text-head">
         <h1>We are launching <span>soon!</span></h1>
         <p>Subscribe and get notified</p>
       </div>
       <form action="#" class="form">
         <input
           type="text"
+          role="input-email"
           class="email-input"
           id="email-input"
           placeholder="Your email address..."
@@ -50,9 +51,11 @@
         <p class="alert2" id="alert2">
           Whoops! It looks like you forgot to add your email
         </p>
-        <button class="notify-btn" id="notify-btn">Notify Me</button>
+        <button role="submit-button" class="notify-btn" id="notify-btn">
+          Notify Me
+        </button>
       </form>
-      <div class="illustration">
+      <div class="illustration" role="illustration">
         <img
           src="images/illustration-dashboard.png"
           alt="illustration-dashboard"
