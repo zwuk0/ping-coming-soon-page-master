@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  /* width: 375px; */
+  display: grid;
+  place-items: center;
+}
+
+.text-head {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.text-head h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+.text-head span {
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(209, 33%, 12%);
+}
+.text-head p {
+  margin-top: 20px;
+  color: hsl(209, 33%, 12%);
+}
+
+/* ---------------Form--------------- */
+.form {
+  text-align: center;
+  width: 375px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid hsl(223, 100%, 88%);
+  outline: none;
+}
+.email-input-toggle {
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid hsl(354, 100%, 66%);
+  outline: none;
+}
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+.alert {
+  display: none;
+}
+.alert2 {
+  display: none;
+}
+.alert-toggle,
+.alert2-toggle {
+  display: block;
+  color: hsl(354, 100%, 66%);
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.notify-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: hsl(223, 87%, 63%);
+  color: #ffffff;
+  border: 2px solid hsl(223, 87%, 63%);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* -----illustration--------------------- */
+.illustration img {
+  width: 375px;
+  margin-top: 50px;
+}
+/* -----footer--------------------------- */
+.social {
+  display: flex;
+}
+.social-icon {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid hsl(223, 100%, 88%);
+  margin: 10px;
+  cursor: pointer;
+}
+.svg {
+  width: 15px;
+  height: 15px;
+}
+.svg path {
+  fill: hsl(223, 87%, 63%);
+}
+.social img {
+  color: aliceblue;
+}
+
+footer p {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+footer {
+  display: grid;
+  place-items: center;
+}
+
+/* -----media-query---------------------- */
+@media screen and (min-width: 800px) {
+  .br {
+    display: none;
+  }
+  .container {
+    width: 800px;
+  }
+  /* -----Heading-text------------- */
+  .text-head {
+    letter-spacing: 3px;
+  }
+  .text-head h1 {
+    font-size: 35px;
+  }
+  .text-head p {
+    letter-spacing: 0px;
+  }
+  /* -----form-elements------------ */
+  .form {
+    width: 800px;
+    position: relative;
+  }
+  .alert,
+  .alert2 {
+    position: absolute;
+    left: 17%;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .alerthide {
+    display: none;
+  }
+  .alert2-toggle {
+    display: block;
+    color: hsl(354, 100%, 66%);
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .email-input {
+    width: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid hsl(223, 100%, 88%);
+  }
+  .email-input-toggle {
+    width: 50%;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid hsl(354, 100%, 66%);
+    outline: none;
+  }
+
+  .form button {
+    width: 20%;
+    font-size: 16px;
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 25px;
+  }
+  /* -----illustration-------------- */
+  .illustration img {
+    width: 500px;
+  }
+}
